@@ -33,6 +33,12 @@ public class AppTest {
             assertThat(actual).isEqualTo("Hello, Travis!!!");
         }
 
+        @Test
+        public void sayHelloMajimenaTest() {
+            String actual = sut.greet("Majimena-Test!!!!");
+
+            assertThat(actual).isEqualTo("Hello, Majimena-Test!!!!");
+        }
     }
 
 }
